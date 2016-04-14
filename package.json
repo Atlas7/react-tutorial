@@ -12,7 +12,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "serve": "nodemon server.js --ignore components"
+    "nodemon": "nodemon server.js --ignore components",
+    "nodemon-debug": "nodemon --debug server.js 80"
   },
   "repository": {
     "type": "git",
