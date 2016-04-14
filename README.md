@@ -23,7 +23,7 @@ You can change the port number by setting the `$PORT` environment variable befor
 PORT=3001 nodemon --debug server.js
 ```
 
-# A not on comments.json file
+# A note on comments.json file
 
 The file `comments.json` is a "fake" database (a JSON file) that changes from time to time - depending on user interaction with the web application.
 
@@ -37,4 +37,47 @@ To undo this (i.e. if you really wish to start tracking this file which is not a
 
 ```.sh
 git update-index --no-assume-unchanged comments.json
+```
+
+# (For info only) Server-side templates for other framework
+
+These are provided by the original React tutorial - handy to keep in here for info. Though I have not used these files.
+
+```
+server.go
+server.php
+server.pl
+server.py
+server.rb
+```
+
+## Instructions to us other framework (provided by original React Tutorial)
+
+### Python
+
+```sh
+pip install -r requirements.txt
+python server.py
+```
+
+### Ruby
+```sh
+ruby server.rb
+```
+
+### PHP
+```sh
+php server.php
+```
+
+### Go
+```sh
+go run server.go
+```
+
+### Perl
+
+```sh
+cpan Mojolicious
+perl server.pl
 ```
