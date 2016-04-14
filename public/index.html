@@ -13,8 +13,61 @@
   </head>
   <body>
     <div id="content"></div>
+
+    <script type="text/babel">
+      // To get started with this tutorial running your own code, simply remove
+      // the script tag loading scripts/example.js and start writing code here.
+
+      // tutorial3.js
+      var CommentBox = React.createClass({
+        render: function() {
+          return (
+            <div className="commentBox">
+              <h1>Comments</h1>
+              <CommentList />
+              <CommentForm />
+            </div>
+          );
+        }
+      });
+
+      // tutorial2.js
+      var CommentList = React.createClass({
+        render: function() {
+          return (
+            <div className="commentList">
+              Hello, world! I am a CommentList.
+            </div>
+          );
+        }
+      });
+
+      var CommentForm = React.createClass({
+        render: function() {
+          return (
+            <div className="commentForm">
+              Hello, world! I am a CommentForm.
+            </div>
+          );
+        }
+      });
+
+      ReactDOM.render(
+        <CommentBox />,
+        document.getElementById('content')
+      );
+
+
+    </script>
+
+    <!-- Default completed example-->
     <!--<script type="text/babel" src="scripts/example.js"></script>-->
+
+    <!--Tutorial-1-->
     <!--<script type="text/babel" src="scripts/tutorial-1.js"></script>-->
-    <script type="text/babel" src="scripts/tutorial1-raw.js"></script>
+
+    <!-- Tutorial-1-raw -->
+    <!--<script type="text/babel" src="scripts/tutorial1-raw.js"></script>-->
+
   </body>
 </html>
