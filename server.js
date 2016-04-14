@@ -35,6 +35,8 @@ app.use(function (req, res, next) {
   next();
 });
 
+var dummy = '[{"name":"John"}, {"name":"Pete"}]';
+
 app.get('/api/comments', function (req, res) {
   fs.readFile(COMMENTS_FILE, function (err, data) {
     if (err) {
@@ -42,6 +44,17 @@ app.get('/api/comments', function (req, res) {
       process.exit(1);
     }
     res.json(JSON.parse(data));
+    //console.log(res.json(JSON.parse(data)));
+    //res.send('OK!');
+    //res.setHeader('jc-name', 'SuperJC');
+    // res.json(JSON.parse(data));
+    // res.end('Very OK');
+    //res.send();
+    // res.writeHead(200, { 'Content-Type': 'text/plain',
+    //   'Trailer': 'Content-MD5' });
+    // res.write(data);
+    // res.addTrailers({'Content-MD5': '7895bf4b8828b55ceaf47747b4bca667'});
+    // res.end();
   });
 });
 
