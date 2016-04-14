@@ -43,7 +43,7 @@
         }
       });
 
-      // tutorial4.js
+      // tutorial6.js
       var Comment = React.createClass({
         render: function() {
           return (
@@ -51,7 +51,7 @@
               <h2 className="commentAuthor">
                 {this.props.author}
               </h2>
-              {this.props.children}
+              {marked(this.props.children.toString())}
             </div>
           );
         }
