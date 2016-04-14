@@ -1,5 +1,4 @@
 {
-  "name": "react-tutorial",
   "version": "0.0.0",
   "description": "Code from the React tutorial.",
   "main": "server.js",
@@ -29,5 +28,6 @@
   "homepage": "https://github.com/Atlas7/react-tutorial",
   "engines" : {
     "node" : "5.10.x"
-  }
+  },
+  "license": "ISC"
 }
